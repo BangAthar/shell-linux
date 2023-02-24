@@ -29,7 +29,7 @@ echo -e "${sc}[SISTEM] ${tc}Script auto config ini hanya di khususkan untuk meng
 sleep 2;
 echo -e "${sc}[SYSTEM] ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
 sleep 2;
-echo -e "${tc}\n"
+echo -n "\n${sc}[SYSTEM] ${tc}"
 read -p "Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "\n\n"
