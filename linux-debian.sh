@@ -27,9 +27,9 @@ echo -e "${sc}[SISTEM] ${tc}Sebelum memulai menjalakan sistem auto konfigurasi i
 sleep 2;
 echo -e "${sc}[SISTEM] ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 2;
-echo -e "${sc}[SYSTEM] ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
+echo -e "${sc}[SISTEM] ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
 sleep 2;
-echo -n "\n${sc}[SYSTEM] ${tc}"
+echo -n -e "\n${sc}[SISTEM] ${tc}"
 read -p "Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "\n\n"
