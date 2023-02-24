@@ -70,7 +70,7 @@ case $opt in
             done
             echo -e "\n\n"
             echo -e "${sc}##################################################"
-            echo -e "${sc}#[SERVER] ${tc}Membersihkan screen linux"
+            echo -e "${sc}# [SERVER] ${tc}Membersihkan screen linux"
             echo -e "${sc}##################################################"
             echo -e "\n\n";
             sleep 3 ; 
