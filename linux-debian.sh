@@ -60,9 +60,10 @@ do
 case $opt in
         "Web Statis")
             echo -e "${sc}[INFO] ${tc}Memilih untuk melakukan instalasi dan konfigurasi Web Statis";
-            for i in {10..1}
+            echo -e "${sc}[SERVER] ${tc}Memulai konfigurasi dalam waktu"
+            for i in {5..1}
             do
-                echo "$i"
+                echo "${sc}[SERVER] ${tc}$i"
                 sleep 1
             done
             ;;
