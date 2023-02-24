@@ -12,7 +12,7 @@ c='\e[32m' # Green Color
 tc='\033[38;5;11m' # Yellow Color
 r='tput sgr0' #Reset Color
 
-echo -e "\n\n\n\n ${d}
+echo -e "\n\n\n\n ${rc}
 
   ____  __ __  ______   ___        _____   ___ ______  __ __  ____      
  /    ||  |  ||      | /   \      / ___/  /  _]      ||  |  ||    \     
@@ -23,7 +23,7 @@ echo -e "\n\n\n\n ${d}
 |__|__| \__,_|  |__|   \___/       \___||_____| |__|   \__,_||__|       
                                                                         
 "; $r
-sleep 2;
+sleep 1;
 
 echo -e "${rc}
 
@@ -37,7 +37,7 @@ echo -e "${rc}
               
 
 "; $r
-sleep 2;
+sleep 1;
 
 echo -e "${rc}
 
@@ -49,10 +49,10 @@ echo -e "${rc}
 |  |  ||     ||  |  | \   / |  |  ||     ||     ||     |\   / 
 |__|__| \___/ |__|__|  \_/  |__|__||_____||_____||_____| \_/  
                                                               
-" $r;
+"; $r
 
-echo -n "${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux";
+echo -e"${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux";
 sleep 1;
-echo -n "${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
+echo -e "${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 1;
 echo -n "${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
