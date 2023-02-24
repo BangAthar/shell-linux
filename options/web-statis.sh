@@ -23,3 +23,7 @@ echo -e "\n\n\n\n ${cy}
 |__| |__||_______||_______|  |_______|  |___|  |__| |__|  |___|  |___| |_______|
 
 "; $r
+
+options=("Web Statis" "Web CRUD PHP" "Web Laravel" "FTP" "MySQL" "Keluar")
+echo -e -n "${c}"
+select opt in "${options[@]}"
