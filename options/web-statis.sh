@@ -27,11 +27,11 @@ echo -e "\n\n\n\n ${cy}
 
 sleep 1;
 
-echo -e "${sc}[SERVER]${rb} ${tc}Menginstall beberapa kebutuhan dasar server Debian"
+echo -e "${sc}[SERVER] ${tc}Menginstall beberapa kebutuhan dasar server Debian"
 echo -e "${sc}[INFO]${rb} ${c}- Update dan Upgrade sistem"
 echo -e "${sc}[INFO]${rb} ${c}- Apache2"
 echo -e "${sc}[INFO]${rb} ${c}- Git"
-echo -n -e "${sc}[SERVER]${rb} ${tc}"
+echo -n -e "${sc}[SERVER] ${tc}"
 read -p "Melanjutkan perintah? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "\n${sc}[INFO]${rb} ${c}Melanjutkan!" ; $r 
@@ -50,22 +50,22 @@ echo -e "${sc}[INFO]${rb} ${c}Berhasil Menginstall kebutuhan dasar server Debian
 sleep 2;
 clear
 
-echo -e "${sc}[SERVER]${rb} ${tc}Mengkloning website dari github repository"
+echo -e "${sc}[SERVER] ${tc}Mengkloning website dari github repository"
 sleep 1;
-echo -e "${sc}[INFO]${rb} ${c}Masuk kedalam direktori /var/www/html"
+echo -e "${sc}[SERVER] ${tc}Masuk kedalam direktori /var/www/html"
 cd /var/www/html
 sleep 1;
 echo -e "${sc}[INFO]${rb} ${c}Memberikan visual isi direktori /var/www/html" $rb
 ls -l
-echo -e "${sc}[SERVER]${rb} ${tc}Terdapat file bernama index.html yang akan dihapus"
+echo -e "${sc}[SERVER] ${tc}Terdapat file bernama index.html yang akan dihapus"
 sleep 3;
-echo -e "${sc}[SERVER]]${rb} ${tc}Menghapus file index.html"
+echo -e "${sc}[SERVER] ${tc}Menghapus file index.html"
 rm -r index.html
 
-echo -e "${sc}[SERVER]${rb} ${tc}Memberikan visual isi direktori /var/www/html" $rb
+echo -e "${sc}[SERVER] ${tc}Memberikan visual isi direktori /var/www/html" $rb
 ls -l
 echo -e "${sc}[INFO]${rb} ${c}Berhasil menghapus file index.html" $rb
 sleep 2;
 
-echo -e "${sc}[SERVER]${rb} ${tc}"
+echo -e -n "${sc}[SERVER] ${tc}"
 read -p "Masukan link github repositori web statis: " linkgithub -r;

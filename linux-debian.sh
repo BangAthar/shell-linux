@@ -30,11 +30,11 @@ echo -e "${sc}##################################"
 echo -e "\n\n";
 $r
 sleep 1;
-echo -e "${sc}[SERVER]${rb} ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
+echo -e "${sc}[SERVER] ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 2;
-echo -e "${sc}[SERVER]${rb} ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
+echo -e "${sc}[SERVER] ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
 sleep 2;
-echo -n -e "\n${sc}[SERVER]${rb} ${tc}"
+echo -n -e "\n${sc}[SERVER] ${tc}"
 read -p "Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "\n${sc}[INFO]${rb} ${c}Memulai sistem auto konfigurasi!" ; $r 
@@ -53,7 +53,7 @@ echo -e "${cy}
 |_______||___|      |___|  |___| |_______||_|  |__||_______|
 "
 
-echo -e "${sc}[SERVER]${rb} ${tc}Pilihlan opsi menu instalasi dan konfigurasi pada server Debian!"
+echo -e "${sc}[SERVER] ${tc}Pilihlan opsi menu instalasi dan konfigurasi pada server Debian!"
 options=("Web Statis" "Web CRUD PHP" "Web Laravel" "FTP" "MySQL" "Keluar")
 echo -e -n "${c}"
 select opt in "${options[@]}"
@@ -63,14 +63,14 @@ case $opt in
             echo -e "\n"
             echo -e "${sc}[INFO]${rb} ${c}Memilih untuk melakukan instalasi dan konfigurasi Web Statis";
             sleep 1;
-            echo -e "${sc}[SERVER]${rb} ${tc}Memulai konfigurasi dalam waktu"
+            echo -e "${sc}[SERVER] ${tc}Memulai konfigurasi dalam waktu"
             for i in {5..1}
             do
-                echo -e "${sc}[SERVER]${rb} ${tc}$i"
+                echo -e "${sc}[SERVER] ${tc}$i"
                 sleep 1
             done
             echo -e "\n\n"
-            echo -e "${sc}[SERVER]${rb} ${tc}Membersihkan screen linux"
+            echo -e "${sc}[SERVER] ${tc}Membersihkan screen linux"
             sleep 3 ; 
             clear
             ./options/web-statis.sh
