@@ -77,3 +77,7 @@ else
 	echo -e -n "${sc}[SERVER] ${tc}"
 	read -p "Masukan link github repositori web statis: " linkgithub; $r
 fi
+
+echo -e "${sc}[INFO]${rb} ${c}Mengcloning website dari github repository" $rb
+git clone $linkgithub;
+echo -e "${sc}[INFO]${rb} ${c}Berhasil melakukan cloning dari github repository" $rb
