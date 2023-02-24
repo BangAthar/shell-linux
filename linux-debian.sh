@@ -30,9 +30,9 @@ echo -e "${sc}##################################"
 echo -e "\n\n";
 $r
 sleep 1;
-echo -e "${sc}[SERVER] ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
+echo -e "${sc}[SERVER]${rb} ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 2;
-echo -e "${sc}[SERVER] ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
+echo -e "${sc}[SERVER]${rb} ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
 sleep 2;
 echo -n -e "\n${sc}[SERVER] ${tc}"
 read -p "Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r;
