@@ -30,7 +30,7 @@ echo -e "${sc}[SERVER] ${tc}Menginstall beberapa kebutuhan dasar server Debian"
 echo -e "${sc}[INFO] ${c}- Update dan Upgrade sistem"
 echo -e "${sc}[INFO] ${c}- Apache2"
 echo -e "${sc}[INFO] ${c}- Git"
-echo -n -e "\n${sc}[SERVER] ${tc}"
+echo -n -e "${sc}[SERVER] ${tc}"
 read -p "Melanjutkan perintah? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "\n${sc}[INFO] ${c}Melanjutkan!" ; $r 
