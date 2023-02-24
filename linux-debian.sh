@@ -59,7 +59,12 @@ select opt in "${options[@]}"
 do
 case $opt in
         "Web Statis")
-            echo "Web Statis"
+            echo -e "${sc}[INFO] ${tc}Memilih untuk melakukan instalasi dan konfigurasi Web Statis";
+            for i in {10..1}
+            do
+                echo "$i"
+                sleep 1
+            done
             ;;
         "Web CRUD PHP")
             echo "Web CRUD PHP"
@@ -82,3 +87,4 @@ case $opt in
             ;;
     esac
 done
+$r
