@@ -29,16 +29,16 @@ echo -e "${sc}##################################"
 echo -e "\n\n";
 $r
 sleep 1;
-echo -e "${sc}[SISTEM] ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
+echo -e "${sc}[SERVER] ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 2;
-echo -e "${sc}[SISTEM] ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
+echo -e "${sc}[SERVER] ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
 sleep 2;
-echo -n -e "\n${sc}[SISTEM] ${tc}"
+echo -n -e "\n${sc}[SERVER] ${tc}"
 read -p "Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	echo -e "\n${sc}[SISTEM] ${c}Memulai sistem auto konfigurasi!" ; $r 
+	echo -e "\n${sc}[INFO] ${c}Memulai sistem auto konfigurasi!" ; $r 
 else
-	echo -e "\n${sc}[SISTEM] ${c}Membatalkan sistem auto konfigurasi!"; $r && :
+	echo -e "\n${sc}[INFO] ${c}Membatalkan sistem auto konfigurasi!"; $r && :
 	exit 0
 fi
 
@@ -52,4 +52,4 @@ echo -e "${cy}
 |_______||___|      |___|  |___| |_______||_|  |__||_______|
 "
 
-echo -e "${sc}[SISTEM] ${tc}Pilihlan opsi menu instalasi dan konfigurasi pada server Debian!"
+echo -e "${sc}[SERVER] ${tc}Pilihlan opsi menu instalasi dan konfigurasi pada server Debian!"
