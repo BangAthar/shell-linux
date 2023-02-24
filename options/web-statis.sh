@@ -48,3 +48,13 @@ if [ $? -ne 0 ]; then
 fi
 echo -e "${sc}[INFO]${rb} ${c}Berhasil Menginstall kebutuhan dasar server Debian"
 sleep 2;
+
+echo -e "${sc}[SERVER]${rb} ${tc}Mengkloning website dari github repository"
+sleep 1;
+echo -e "${sc}[INFO]${rb} ${c}Masuk kedalam direktori /var/www/html"
+sleep 1;
+echo -e "${sc}[INFO]${rb} ${c}Memberikan visual isi direktori /var/www/html"
+ls -l
+echo -e "${sc}[SERVER]${rb} ${tc}Terdapat file bernama index.html yang akan dihapus"
+sleep 2;
+echo -e "${sc}[INFO]${rb} ${c}"
