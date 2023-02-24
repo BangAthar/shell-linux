@@ -54,7 +54,7 @@ echo -e "${sc}[SERVER]${rb} ${tc}Mengkloning website dari github repository"
 sleep 1;
 echo -e "${sc}[INFO]${rb} ${c}Masuk kedalam direktori /var/www/html"
 sleep 1;
-echo -e "${sc}[INFO]${rb} ${c}Memberikan visual isi direktori /var/www/html" $r
+echo -e "${sc}[INFO]${rb} ${c}Memberikan visual isi direktori /var/www/html" $rb
 ls -l
 echo -e "${sc}[SERVER]${rb} ${tc}Terdapat file bernama index.html yang akan dihapus"
 sleep 2;
