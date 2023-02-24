@@ -64,4 +64,4 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 else
 	echo -e "${c}Membatalkan sistem auto konfigurasi!"; $r && :
 	exit 0
-fi
+fia
