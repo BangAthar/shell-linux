@@ -22,10 +22,10 @@ echo -e "\n\n\n\n ${cy}
 						  - By NoxvalDev\n\n\n                                                                        
 "; $r
 sleep 2;
-echo -e "${sc}####################"
-echo -e "${tc}AutoSetup V1.0.0"
-echo -e "${tc}Author By Noxval"
-echo -e "${sc}####################"
+echo -e "${sc}##################################"
+echo -e "${sc}#${tc}AutoSetup V1.0.0"
+echo -e "${sc}#${tc}Author By Noxval"
+echo -e "${sc}##################################"
 echo -e "\n\n";
 $r
 sleep 1;
