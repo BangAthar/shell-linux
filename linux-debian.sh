@@ -52,7 +52,16 @@ echo -e "${rc}
 "; $r
 
 echo -e"${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux";
-sleep 1;
+sleep 2;
 echo -e "${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
-sleep 1;
-echo -e "${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
+sleep 2;
+echo -e "${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS"; $r
+sleep 2;
+read -p "${tc}}Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r; $r
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+	echo -e "\n\n"
+	echo -e "${c}Memulai sistem auto konfigurasi!" ; $r 
+else
+	echo -e "${c}Membatalkan sistem auto konfigurasi!"; $r && :
+	exit 0
+fi
