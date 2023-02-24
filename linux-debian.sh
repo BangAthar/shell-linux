@@ -6,10 +6,11 @@
 #               bertujuan untuk mempermudah dan membantu pekerjaan manusia!
 ##################################################################################################
 
-cy='\033[0;96m' # Cyan Color
+rb='\033[0m'
+cy='\033[96m' # Cyan Color
 sc='\033[1;31m' # Red Color
-c='\e[0;32m' # Green Color
-tc='\033[0;11m' # Yellow Color
+c='\e[32m' # Green Color
+tc='\033[38;5;11m' # Yellow Color
 r='tput sgr0' #Reset Color
 
 echo -e "\n\n\n\n ${cy}
@@ -29,16 +30,16 @@ echo -e "${sc}##################################"
 echo -e "\n\n";
 $r
 sleep 1;
-echo -e "${sc}[SERVER]${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
+echo -e "${sc}[SERVER] ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 2;
-echo -e "${sc}[SERVER]${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
+echo -e "${sc}[SERVER] ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
 sleep 2;
-echo -n -e "\n${sc}[SERVER]${rb}  ${tc}"
+echo -n -e "\n${sc}[SERVER] ${tc}"
 read -p "Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	echo -e "\n${sc}[INFO]${rb}  ${c}Memulai sistem auto konfigurasi!" ; $r 
+	echo -e "\n${sc}[INFO] ${c}Memulai sistem auto konfigurasi!" ; $r 
 else
-	echo -e "\n${sc}[INFO]${rb}  ${c}Membatalkan sistem auto konfigurasi!"; $r && :
+	echo -e "\n${sc}[INFO] ${c}Membatalkan sistem auto konfigurasi!"; $r && :
 	exit 0
 fi
 
