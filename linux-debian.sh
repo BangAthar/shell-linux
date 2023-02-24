@@ -13,51 +13,23 @@ tc='\033[38;5;11m' # Yellow Color
 r='tput sgr0' #Reset Color
 
 echo -e "\n\n\n\n ${rc}
-
-  ____  __ __  ______   ___        _____   ___ ______  __ __  ____      
- /    ||  |  ||      | /   \      / ___/  /  _]      ||  |  ||    \     
-|  o  ||  |  ||      ||     |    (   \_  /  [_|      ||  |  ||  o  )    
-|     ||  |  ||_|  |_||  O  |     \__  ||    _]_|  |_||  |  ||   _/     
-|  _  ||  :  |  |  |  |     |     /  \ ||   [_  |  |  |  :  ||  |       
-|  |  ||     |  |  |  |     |     \    ||     | |  |  |     ||  |       
-|__|__| \__,_|  |__|   \___/       \___||_____| |__|   \__,_||__|       
-                                                                        
+    _         _       ____       _
+   / \  _   _| |_ ___/ ___|  ___| |_ _   _ _ __
+  / _ \| | | | __/ _ \___ \ / _ \ __| | | | '_ |
+ / ___ \ |_| | || (_) |__) |  __/ |_| |_| | |_) |
+/_/   \_\__,_|\__\___/____/ \___|\__|\__,_| .__/
+                                          |_| 
+						  - By NoxvalDev\n\n\n                                                                        
 "; $r
 sleep 1;
 
-echo -e "${rc}
-
- ____   __ __ 
-|    \ |  |  |
-|  o  )|  |  |
-|     ||  ~  |
-|  O  ||___, |
-|     ||     |
-|_____||____/ 
-              
-
-"; $r
-sleep 1;
-
-echo -e "${rc}
-
- ____    ___   __ __  __ __   ____  _      ___      ___ __ __ 
-|    \  /   \ |  |  ||  |  | /    || |    |   \    /  _]  |  |
-|  _  ||     ||  |  ||  |  ||  o  || |    |    \  /  [_|  |  |
-|  |  ||  O  ||_   _||  |  ||     || |___ |  D  ||    _]  |  |
-|  |  ||     ||     ||  :  ||  _  ||     ||     ||   [_|  :  |
-|  |  ||     ||  |  | \   / |  |  ||     ||     ||     |\   / 
-|__|__| \___/ |__|__|  \_/  |__|__||_____||_____||_____| \_/  
-                                                              
-";
-
-echo -e "${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux";
+echo -e "${cy}[INFO}${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux";
 sleep 2;
-echo -e "${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
+echo -e "${cy}[INFO}${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 2;
-echo -e "${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
+echo -e "${cy}[INFO}${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
 sleep 2;
-read -p -e "${tc}}Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r; $r
+read -p "${tc}Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "\n\n"
 	echo -e "${c}Memulai sistem auto konfigurasi!" ; $r 
