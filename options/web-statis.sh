@@ -27,3 +27,4 @@ echo -e "\n\n\n\n ${cy}
 options=("Web Statis" "Web CRUD PHP" "Web Laravel" "FTP" "MySQL" "Keluar")
 echo -e -n "${c}"
 select opt in "${options[@]}"
+do
