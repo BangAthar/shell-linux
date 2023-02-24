@@ -72,7 +72,7 @@ case $opt in
             echo -e "${sc}# ${tc}Membersihkan screen linux"
             echo -e "${sc}#####################################"
             echo -e "\n\n";
-            sleep 2 ; 
+            sleep 3 ; 
             clear
             ./options/web-statis.sh
             ;;
