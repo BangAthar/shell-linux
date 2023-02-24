@@ -23,3 +23,18 @@ echo -e "\n\n\n\n ${cy}
 |__| |__||_______||_______|  |_______|  |___|  |__| |__|  |___|  |___| |_______|
 
 "; $r
+
+sleep 2;
+
+echo -e "${sc}[SERVER] ${tc}Menginstall beberapa kebutuhan dasar server Debian"
+echo -e "${sc}[INFO] ${c}- Update dan Upgrade sistem"
+echo -e "${sc}[INFO] ${c}- Apache2"
+echo -e "${sc}[INFO] ${c}- Git"
+echo -n -e "\n${sc}[SERVER] ${tc}"
+read -p "Melanjutkan perintah? (y/n): " -r;
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+	echo -e "\n${sc}[INFO] ${c}Melanjutkan!" ; $r 
+else
+	echo -e "\n${sc}[INFO] ${c}Membatalkan Perintah"; $r && :
+	break
+fi
