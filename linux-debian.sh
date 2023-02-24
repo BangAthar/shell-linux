@@ -70,7 +70,6 @@ case $opt in
             done
             echo -e "\n\n"
             echo -e "${sc}[SERVER] ${tc}Membersihkan screen linux"
-            echo -e "\n\n";
             sleep 3 ; 
             clear
             ./options/web-statis.sh
