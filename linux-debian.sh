@@ -55,4 +55,4 @@ echo -e"${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan and
 sleep 1;
 echo -e "${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 1;
-echo -n "${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
+echo -e "${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
