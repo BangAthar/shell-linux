@@ -37,3 +37,13 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 else
 	echo -e "\n${sc}[INFO] ${c}Membatalkan Perintah"; $r && ;
 fi
+apt update -y && apt upgrade -y
+apt --fix-broken install -y
+apt install apache2 -y
+apt install git -y
+if [ $? -ne 0 ]; then
+    echo -e "${sc}[INFO] ${c}Gagal melakukan instalasi kebutuhan dasar server Debian!" >&2
+    exit 1
+fi
+echo -e "${sc}[INFO] ${c}Berhasil Menginstall kebutuhan dasar server Debian"
+sleep 2;
