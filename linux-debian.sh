@@ -49,9 +49,9 @@ echo -e "${rc}
 |  |  ||     ||  |  | \   / |  |  ||     ||     ||     |\   / 
 |__|__| \___/ |__|__|  \_/  |__|__||_____||_____||_____| \_/  
                                                               
-"; $r
+";
 
-echo -e"${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux";
+echo -e "${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux";
 sleep 2;
 echo -e "${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 2;
