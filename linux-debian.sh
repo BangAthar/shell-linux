@@ -23,8 +23,8 @@ echo -e "\n\n\n\n ${cy}
 "; $r
 sleep 2;
 echo -e "${sc}##################################"
-echo -e "${sc}#${tc}AutoSetup V1.0.0"
-echo -e "${sc}#${tc}Author By Noxval"
+echo -e "${sc}# ${tc}AutoSetup V1.0.0"
+echo -e "${sc}# ${tc}Author By Noxval"
 echo -e "${sc}##################################"
 echo -e "\n\n";
 $r
