@@ -41,3 +41,15 @@ else
 	echo -e "\n${sc}[SISTEM] ${c}Membatalkan sistem auto konfigurasi!"; $r && :
 	exit 0
 fi
+
+echo -e "
+ _______  _______  _______  ___   _______  __    _  _______ 
+|       ||       ||       ||   | |       ||  |  | ||       |
+|   _   ||    _  ||_     _||   | |   _   ||   |_| ||  _____|
+|  | |  ||   |_| |  |   |  |   | |  | |  ||       || |_____ 
+|  |_|  ||    ___|  |   |  |   | |  |_|  ||  _    ||_____  |
+|       ||   |      |   |  |   | |       || | |   | _____| |
+|_______||___|      |___|  |___| |_______||_|  |__||_______|
+" $r
+
+echo -e "${sc}[SISTEM] ${tc}Pilihlan opsi menu instalasi dan konfigurasi pada server Debian!"
