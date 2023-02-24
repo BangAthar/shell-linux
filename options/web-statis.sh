@@ -68,4 +68,4 @@ echo -e "${sc}[INFO]${rb} ${c}Berhasil menghapus file index.html" $rb
 sleep 2;
 
 echo -e -n "${sc}[SERVER] ${tc}"
-read -p "Masukan link github repositori web statis: " linkgithub -r;
+read -p "Masukan link github repositori web statis: " linkgithub;
