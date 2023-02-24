@@ -54,6 +54,7 @@ echo -e "${cy}
 
 echo -e "${sc}[SERVER] ${tc}Pilihlan opsi menu instalasi dan konfigurasi pada server Debian!"
 options=("Web Statis" "Web CRUD PHP" "Web Laravel" "FTP" "MySQL")
+echo -e -n "${c}"
 select opt in "${options[@]}"
 do
 case $opt in
