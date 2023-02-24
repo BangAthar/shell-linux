@@ -9,7 +9,7 @@
 cy='\033[96m' # Cyan Color
 rc='\033[0;31m' # Red Color
 c='\e[32m' # Green Color
-tc=$'\033[38;5;11m' # Yellow Color
+tc='\033[38;5;11m' # Yellow Color
 r='tput sgr0' #Reset Color
 
 echo -e "\n\n\n\n ${d}
@@ -23,8 +23,9 @@ echo -e "\n\n\n\n ${d}
 |__|__| \__,_|  |__|   \___/       \___||_____| |__|   \__,_||__|       
                                                                         
 "; $r
+sleep 2;
 
-echo -e "\n ${rc}
+echo -e "${rc}
 
  ____   __ __ 
 |    \ |  |  |
@@ -36,8 +37,9 @@ echo -e "\n ${rc}
               
 
 "; $r
+sleep 2;
 
-echo -e "\n ${rc}
+echo -e "${rc}
 
  ____    ___   __ __  __ __   ____  _      ___      ___ __ __ 
 |    \  /   \ |  |  ||  |  | /    || |    |   \    /  _]  |  |
@@ -47,11 +49,10 @@ echo -e "\n ${rc}
 |  |  ||     ||  |  | \   / |  |  ||     ||     ||     |\   / 
 |__|__| \___/ |__|__|  \_/  |__|__||_____||_____||_____| \_/  
                                                               
-" $r
+" $r;
 
-
-echo -n "${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux"
-sleep 1
-echo -n "${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian"
-sleep 1
-echo -n "${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS"
+echo -n "${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux";
+sleep 1;
+echo -n "${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
+sleep 1;
+echo -n "${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
