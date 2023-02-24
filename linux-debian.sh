@@ -59,11 +59,12 @@ select opt in "${options[@]}"
 do
 case $opt in
         "Web Statis")
+            echo -e "\n"
             echo -e "${sc}[INFO] ${tc}Memilih untuk melakukan instalasi dan konfigurasi Web Statis";
             echo -e "${sc}[SERVER] ${tc}Memulai konfigurasi dalam waktu"
             for i in {5..1}
             do
-                echo "${sc}[SERVER] ${tc}$i"
+                echo -e "${sc}[SERVER] ${tc}$i"
                 sleep 1
             done
             ;;
