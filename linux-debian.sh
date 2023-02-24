@@ -30,7 +30,7 @@ sleep 2;
 echo -n -e "\n${sc}[SISTEM] ${tc}"
 read -p "Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	echo -e "${sc}[SISTEM] ${c}Memulai sistem auto konfigurasi!" ; $r 
+	echo -e "\n${sc}[SISTEM] ${c}Memulai sistem auto konfigurasi!" ; $r 
 else
 	echo -e "\n${sc}[SISTEM] ${c}Membatalkan sistem auto konfigurasi!"; $r && :
 	exit 0
