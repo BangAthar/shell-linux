@@ -35,6 +35,5 @@ read -p "Melanjutkan perintah? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "\n${sc}[INFO] ${c}Melanjutkan!" ; $r 
 else
-	echo -e "\n${sc}[INFO] ${c}Membatalkan Perintah"; $r && :
-	break
+	echo -e "\n${sc}[INFO] ${c}Membatalkan Perintah"; $r && ;
 fi
