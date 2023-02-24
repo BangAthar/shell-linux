@@ -9,7 +9,7 @@
 cy='\033[0;96m' # Cyan Color
 sc='\033[1;31m' # Red Color
 c='\e[0;32m' # Green Color
-tc='\033[0;5;11m' # Yellow Color
+tc='\033[0;11m' # Yellow Color
 r='tput sgr0' #Reset Color
 
 echo -e "\n\n\n\n ${cy}
