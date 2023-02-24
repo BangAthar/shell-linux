@@ -61,3 +61,8 @@ echo -e "${sc}[SERVER]${rb} ${tc}Terdapat file bernama index.html yang akan diha
 sleep 3;
 echo -e "${sc}[INFO]${rb} ${c}Menghapus file index.html"
 rm -r index.html
+
+echo -e "${sc}[INFO]${rb} ${c}Memberikan visual isi direktori /var/www/html" $rb
+ls -l
+echo -e "${sc}[INFO]${rb} ${c}Berhasil menghapus file index.html" $rb
+sleep 2;
