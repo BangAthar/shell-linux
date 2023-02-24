@@ -26,24 +26,24 @@ echo -e "\n\n\n\n ${cy}
 
 sleep 1;
 
-echo -e "${sc}[SERVER] ${tc}Menginstall beberapa kebutuhan dasar server Debian"
-echo -e "${sc}[INFO] ${c}- Update dan Upgrade sistem"
-echo -e "${sc}[INFO] ${c}- Apache2"
-echo -e "${sc}[INFO] ${c}- Git"
+echo -e "${sc}[SERVER]${rb} ${tc}Menginstall beberapa kebutuhan dasar server Debian"
+echo -e "${sc}[INFO]${rb} ${c}- Update dan Upgrade sistem"
+echo -e "${sc}[INFO]${rb} ${c}- Apache2"
+echo -e "${sc}[INFO]${rb} ${c}- Git"
 echo -n -e "${sc}[SERVER] ${tc}"
 read -p "Melanjutkan perintah? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	echo -e "\n${sc}[INFO] ${c}Melanjutkan!" ; $r 
+	echo -e "\n${sc}[INFO]${rb} ${c}Melanjutkan!" ; $r 
 else
-	echo -e "\n${sc}[INFO] ${c}Membatalkan Perintah"; $r
+	echo -e "\n${sc}[INFO]${rb} ${c}Membatalkan Perintah"; $r
 fi
 apt update -y && apt upgrade -y
 apt --fix-broken install -y
 apt install apache2 -y
 apt install gawadwad -y
 if [ $? -ne 0 ]; then
-    echo -e "${sc}[INFO] ${c}Gagal melakukan instalasi kebutuhan dasar server Debian!" >&2
+    echo -e "${sc}[INFO]${rb} ${c}Gagal melakukan instalasi kebutuhan dasar server Debian!" >&2
     exit 1
 fi
-echo -e "${sc}[INFO] ${c}Berhasil Menginstall kebutuhan dasar server Debian"
+echo -e "${sc}[INFO]${rb} ${c}Berhasil Menginstall kebutuhan dasar server Debian"
 sleep 2;

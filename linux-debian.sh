@@ -34,12 +34,12 @@ echo -e "${sc}[SERVER]${rb} ${tc}Script auto config ini hanya di khususkan untuk
 sleep 2;
 echo -e "${sc}[SERVER]${rb} ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
 sleep 2;
-echo -n -e "\n${sc}[SERVER] ${tc}"
+echo -n -e "\n${sc}[SERVER]${rb} ${tc}"
 read -p "Apakah yakin menggunakan sistem auto konfigurasi? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	echo -e "\n${sc}[INFO] ${c}Memulai sistem auto konfigurasi!" ; $r 
+	echo -e "\n${sc}[INFO]${rb} ${c}Memulai sistem auto konfigurasi!" ; $r 
 else
-	echo -e "\n${sc}[INFO] ${c}Membatalkan sistem auto konfigurasi!"; $r && :
+	echo -e "\n${sc}[INFO]${rb} ${c}Membatalkan sistem auto konfigurasi!"; $r && :
 	exit 0
 fi
 
@@ -53,7 +53,7 @@ echo -e "${cy}
 |_______||___|      |___|  |___| |_______||_|  |__||_______|
 "
 
-echo -e "${sc}[SERVER] ${tc}Pilihlan opsi menu instalasi dan konfigurasi pada server Debian!"
+echo -e "${sc}[SERVER]${rb} ${tc}Pilihlan opsi menu instalasi dan konfigurasi pada server Debian!"
 options=("Web Statis" "Web CRUD PHP" "Web Laravel" "FTP" "MySQL" "Keluar")
 echo -e -n "${c}"
 select opt in "${options[@]}"
@@ -61,16 +61,16 @@ do
 case $opt in
         "Web Statis")
             echo -e "\n"
-            echo -e "${sc}[INFO] ${c}Memilih untuk melakukan instalasi dan konfigurasi Web Statis";
+            echo -e "${sc}[INFO]${rb} ${c}Memilih untuk melakukan instalasi dan konfigurasi Web Statis";
             sleep 1;
-            echo -e "${sc}[SERVER] ${tc}Memulai konfigurasi dalam waktu"
+            echo -e "${sc}[SERVER]${rb} ${tc}Memulai konfigurasi dalam waktu"
             for i in {5..1}
             do
-                echo -e "${sc}[SERVER] ${tc}$i"
+                echo -e "${sc}[SERVER]${rb} ${tc}$i"
                 sleep 1
             done
             echo -e "\n\n"
-            echo -e "${sc}[SERVER] ${tc}Membersihkan screen linux"
+            echo -e "${sc}[SERVER]${rb} ${tc}Membersihkan screen linux"
             sleep 3 ; 
             clear
             ./options/web-statis.sh
