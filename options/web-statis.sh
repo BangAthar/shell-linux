@@ -35,7 +35,7 @@ read -p "Melanjutkan perintah? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "\n${sc}[INFO] ${c}Melanjutkan!" ; $r 
 else
-	echo -e "\n${sc}[INFO] ${c}Membatalkan Perintah"; $r && ;
+	echo -e "\n${sc}[INFO] ${c}Membatalkan Perintah"; $r
 fi
 apt update -y && apt upgrade -y
 apt --fix-broken install -y
