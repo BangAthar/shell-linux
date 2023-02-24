@@ -31,7 +31,7 @@ echo -e "${sc}[SERVER]${rb} ${tc}Menginstall beberapa kebutuhan dasar server Deb
 echo -e "${sc}[INFO]${rb} ${c}- Update dan Upgrade sistem"
 echo -e "${sc}[INFO]${rb} ${c}- Apache2"
 echo -e "${sc}[INFO]${rb} ${c}- Git"
-echo -n -e "${sc}[SERVER] ${tc}"
+echo -n -e "${sc}[SERVER]${rb} ${tc}"
 read -p "Melanjutkan perintah? (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "\n${sc}[INFO]${rb} ${c}Melanjutkan!" ; $r 
