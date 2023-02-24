@@ -60,7 +60,7 @@ do
 case $opt in
         "Web Statis")
             echo -e "\n"
-            echo -e "${sc}[INFO] ${tc}Memilih untuk melakukan instalasi dan konfigurasi Web Statis";
+            echo -e "${sc}[INFO] ${c}Memilih untuk melakukan instalasi dan konfigurasi Web Statis";
             sleep 1;
             echo -e "${sc}[SERVER] ${tc}Memulai konfigurasi dalam waktu"
             for i in {5..1}
@@ -69,9 +69,9 @@ case $opt in
                 sleep 1
             done
             echo -e "\n\n"
-            echo -e "${sc}#####################################"
-            echo -e "${sc}# ${tc}Membersihkan screen linux"
-            echo -e "${sc}#####################################"
+            echo -e "${sc}##################################################"
+            echo -e "${sc}#[SERVER] ${tc}Membersihkan screen linux"
+            echo -e "${sc}##################################################"
             echo -e "\n\n";
             sleep 3 ; 
             clear
