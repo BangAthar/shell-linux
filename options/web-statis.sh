@@ -6,6 +6,7 @@
 #               bertujuan untuk mempermudah dan membantu pekerjaan manusia!
 ##################################################################################################
 
+rb='\033[0m'
 cy='\033[96m' # Cyan Color
 sc='\033[1;31m' # Red Color
 c='\e[32m' # Green Color
@@ -40,7 +41,7 @@ fi
 apt update -y && apt upgrade -y
 apt --fix-broken install -y
 apt install apache2 -y
-apt install gawadwad -y
+apt install git -y
 if [ $? -ne 0 ]; then
     echo -e "${sc}[INFO]${rb} ${c}Gagal melakukan instalasi kebutuhan dasar server Debian!" >&2
     exit 1
