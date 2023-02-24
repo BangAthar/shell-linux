@@ -59,10 +59,13 @@ echo -e "${sc}[INFO]${rb} ${c}Memberikan visual isi direktori /var/www/html" $rb
 ls -l
 echo -e "${sc}[SERVER]${rb} ${tc}Terdapat file bernama index.html yang akan dihapus"
 sleep 3;
-echo -e "${sc}[INFO]${rb} ${c}Menghapus file index.html"
+echo -e "${sc}[SERVER]]${rb} ${tc}Menghapus file index.html"
 rm -r index.html
 
-echo -e "${sc}[INFO]${rb} ${c}Memberikan visual isi direktori /var/www/html" $rb
+echo -e "${sc}[SERVER]${rb} ${tc}Memberikan visual isi direktori /var/www/html" $rb
 ls -l
 echo -e "${sc}[INFO]${rb} ${c}Berhasil menghapus file index.html" $rb
 sleep 2;
+
+echo -e "${sc}[SERVER]${rb} ${tc}"
+read -p "Masukan link github repositori web statis: " linkgithub -r;
