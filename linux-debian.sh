@@ -23,7 +23,7 @@ echo -e "\n\n\n\n ${cy}
 "; $r
 sleep 1;
 
-echo -e "${sc}[SISTEM] ${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan anda berada dalam server linux";
+echo -e "${sc}[SISTEM] ${tc}Sebelum memulai menjalakan sistem auto konfigurasi ini pastikan berada dalam OS Linux Based Debian";
 sleep 2;
 echo -e "${sc}[SISTEM] ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 2;
