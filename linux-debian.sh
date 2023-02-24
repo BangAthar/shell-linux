@@ -68,6 +68,7 @@ case $opt in
                 echo -e "${sc}[SERVER] ${tc}$i"
                 sleep 1
             done
+            echo -e "\n\n"
             echo -e "${sc}#####################################"
             echo -e "${sc}# ${tc}Membersihkan screen linux"
             echo -e "${sc}#####################################"
