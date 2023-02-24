@@ -67,6 +67,7 @@ case $opt in
                 echo -e "${sc}[SERVER] ${tc}$i"
                 sleep 1
             done
+            ./options/web-statis.sh
             ;;
         "Web CRUD PHP")
             echo "Web CRUD PHP"
