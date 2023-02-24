@@ -24,7 +24,7 @@ echo -e "\n\n\n\n ${cy}
 
 "; $r
 
-sleep 2;
+sleep 1;
 
 echo -e "${sc}[SERVER] ${tc}Menginstall beberapa kebutuhan dasar server Debian"
 echo -e "${sc}[INFO] ${c}- Update dan Upgrade sistem"
