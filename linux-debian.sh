@@ -22,12 +22,13 @@ echo -e "\n\n\n\n ${cy}
 						  - By NoxvalDev\n\n\n                                                                        
 "; $r
 sleep 2;
-echo -e "${sc}#######################################################################"
+echo -e "${sc}####################"
 echo -e "${tc}AutoSetup V1.0.0"
-echo -e "${sc}#######################################################################"
-
+echo -e "${tc}Author By Noxval"
+echo -e "${sc}####################"
+echo -e "\n\n";
+$r
 sleep 1;
-
 echo -e "${sc}[SISTEM] ${tc}Script auto config ini hanya di khususkan untuk mengconfigurasi server linux based Debian";
 sleep 2;
 echo -e "${sc}[SISTEM] ${tc}Direkomendasi untuk menggunakan script ini hanya pengguna AWS";
