@@ -53,3 +53,27 @@ echo -e "${cy}
 "
 
 echo -e "${sc}[SERVER] ${tc}Pilihlan opsi menu instalasi dan konfigurasi pada server Debian!"
+options=("Web Statis" "Web CRUD PHP" "Web Laravel" "FTP" "MySQL")
+select opt in "${options[@]}"
+do
+case $opt in
+        "Web Statis")
+            echo "Web Statis"
+            ;;
+        "Web CRUD PHP")
+            echo "Web CRUD PHP"
+            ;;
+        "Web Laravel")
+            echo "Web Laravel"
+            ;;
+        "FTP")
+            echo "FTP"
+            ;;
+        "MySQL")
+            echo "FTP"
+            ;;
+        *)
+            echo "Pilihan tidak valid, silakan coba lagi"
+            ;;
+    esac
+done
