@@ -69,3 +69,10 @@ sleep 2;
 
 echo -e -n "${sc}[SERVER] ${tc}"
 read -p "Masukan link github repositori web statis: " linkgithub;
+echo -e -n "${sc}[SERVER] ${tc}"
+read -p "Apakah link tersebut sudah benar? (y/n): " -r;
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+	echo -e "${sc}[INFO]${rb} ${c}Melanjutkan!" ; $r 
+else
+	echo -e -n "${sc}[SERVER] ${tc}"
+	read -p "Masukan link github repositori web statis: " linkgithub; $r
