@@ -27,6 +27,11 @@ echo -e "\n\n\n\n ${cy}
 
 sleep 1;
 
+echo -e "${sc}###########################################################"
+echo -e "${sc}[SERVER] ${tc}Melakukan setup instalasi Web Server Statis"
+echo -e "${sc}###########################################################"
+echo -e "\n\n";
+$r
 echo -e "${sc}[SERVER] ${tc}Menginstall beberapa kebutuhan dasar server Debian"
 echo -e "${sc}[INFO]${rb} ${c}- Update dan Upgrade sistem"
 echo -e "${sc}[INFO]${rb} ${c}- Apache2"
