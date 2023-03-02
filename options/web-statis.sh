@@ -95,6 +95,7 @@ echo -e -n "${sc}[SERVER] ${tc}"
 read -p "Apakah konfigurasi ini mau dilakukan secara manual atau otomatis? Jika otomatis pilih Y (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "${sc}[INFO]${rb} ${c}Melanjutkan!" ; $r 
+	sleep 1;
 else
 	echo -e "${sc}[INFO]${rb} ${c}Melanjutkan konfigurasi web secara manual" ; $r
 	sleep 1;
@@ -103,12 +104,17 @@ else
 	echo -e "${sc}[INFO]${rb} ${c}Berhasil dimatikan!" ; $r
 	exit;
 fi
+echo -e "\n"
 echo -e -n "${sc}[SERVER] ${tc}"
-read -p "Masukan URL repository github web statis" linkgithub -r;
+read -p "Masukan URL repository github web statis : " linkgithub;
+echo -e -n "${sc}[SERVER] ${tc}"
+read -p "Apakah URL repository github sudah benar? (y\n) : " -r;
+echo -e "";
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	echo -e "${sc}[INFO]${rb} ${c}Melanjutkan!" ; $r 
+	echo -e "${sc}[SERVER] ${tc}Mengcloning web dari github ke server" ; $r 
+	sleep 1;
 else
-	read -p "Masukan URL repository github web statis" linkgithub -r;
+	echo -e -n "${sc}[SERVER] ${tc}"
+	read -p "Masukan URL repository github web statis" linkgithub;
 fi
-
-test
+git clone 
