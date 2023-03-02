@@ -8,7 +8,7 @@
 
 rb='\033[0m'
 cy='\033[96m' # Cyan Color
-sc='\033[1;31m' # Red Color
+sc='\033[0;31m' # Red Color
 c='\e[32m' # Green Color
 tc='\033[38;5;11m' # Yellow Color
 r='tput sgr0' #Reset Color
@@ -32,11 +32,6 @@ echo -e "${sc}###########################################################"
 echo -e "\n";
 $r
 
-echo -e "${sc}###########################################################"
-echo -e "${sc}[SERVER] ${tc}Melakukan setup instalasi Web Server Statis"
-echo -e "${sc}###########################################################"
-echo -e "\n\n";
-$r
 echo -e "${sc}[SERVER] ${tc}Menginstall beberapa kebutuhan dasar server Debian"
 echo -e "${sc}[INFO]${rb} ${c}- Update dan Upgrade sistem"
 echo -e "${sc}[INFO]${rb} ${c}- Apache2"
@@ -73,6 +68,7 @@ rm -r index.html
 echo -e "${sc}[SERVER] ${tc}Memberikan visual isi direktori /var/www/html" $rb
 ls -l
 echo -e "${sc}[INFO]${rb} ${c}Berhasil menghapus file index.html" $rb
+echo -e "\n";
 sleep 2;
 
 echo -e "${sc}###########################################################"
@@ -83,14 +79,14 @@ $r
 sleep 2;
 clear
 
-echo -e "${sc}###########################################################"
+echo -e "${sc}##############################################################################################################"
 echo -e "${sc}[SERVER] ${tc}Setup instalasi web server berhasil dilakukan, Ada beberapa hal yg perlu dilakukan untuk mengkonfigurasi Web Server Statis, yaitu :"
 echo -e "${sc}[SERVER] ${tc}1. Mengkloning dari github atau mengupload website"
 echo -e "${sc}[SERVER] ${tc}2. Mengubah konfigurasi virtual host pada Apache2"
 echo -e "${sc}[SERVER] ${tc}3. Merestart service Apache2"
-echo -e "${sc}###########################################################"
+echo -e "${sc}##############################################################################################################"
 $r
-
+echo -e "\n";
 echo -e -n "${sc}[SERVER] ${tc}"
 read -p "Apakah konfigurasi ini mau dilakukan secara manual atau otomatis? Jika otomatis pilih Y (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
@@ -117,4 +113,16 @@ else
 	echo -e -n "${sc}[SERVER] ${tc}"
 	read -p "Masukan URL repository github web statis" linkgithub;
 fi
-git clone linkgithub
+git clone $linkgithub
+echo -e "${sc}[SERVER] ${tc}Memberikan visual isi direktori /var/www/html" ; $r
+ls -l
+sleep 1;
+echo -e "${sc}[INFO] ${c} Berhasil mengcloning website dari repo github ke dalam server" ; $r
+sleep 3;
+echo -e "${sc}[SERVER] ${tc}Memberikan permission ke direktori website" ; $r
+chmod 777 -R /var/www/html/*
+sleep 1;
+echo -e "${sc}[INFO] ${c} Berhasil mengubah permission" ; $r
+sleep 1;
+
+

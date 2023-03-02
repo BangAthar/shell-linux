@@ -8,7 +8,7 @@
 
 rb='\033[0m'
 cy='\033[96m' # Cyan Color
-sc='\033[1;31m' # Red Color
+sc='\033[0;31m' # Red Color
 c='\e[32m' # Green Color
 tc='\033[38;5;11m' # Yellow Color
 r='tput sgr0' #Reset Color
