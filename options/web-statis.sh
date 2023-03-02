@@ -110,3 +110,5 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 else
 	read -p "Masukan URL repository github web statis" linkgithub -r;
 fi
+
+test
