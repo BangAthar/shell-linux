@@ -117,4 +117,4 @@ else
 	echo -e -n "${sc}[SERVER] ${tc}"
 	read -p "Masukan URL repository github web statis" linkgithub;
 fi
-git clone 
+git clone linkgithub
