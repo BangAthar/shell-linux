@@ -13,7 +13,7 @@ c='\e[32m' # Green Color
 tc='\033[38;5;11m' # Yellow Color
 r='tput sgr0' #Reset Color
 
-echo -e "\n\n\n\n ${cy}
+echo -e "\n\n${cy}
 
  _     _  _______  _______    _______  _______  _______  _______  ___   _______ 
 | | _ | ||       ||  _    |  |       ||       ||   _   ||       ||   | |       |
@@ -26,6 +26,11 @@ echo -e "\n\n\n\n ${cy}
 "; $r
 
 sleep 1;
+echo -e "${sc}###########################################################"
+echo -e "${sc}[SERVER] ${tc}Melakukan setup instalasi Web Server Statis"
+echo -e "${sc}###########################################################"
+echo -e "\n";
+$r
 
 echo -e "${sc}[SERVER] ${tc}Menginstall beberapa kebutuhan dasar server Debian"
 echo -e "${sc}[INFO]${rb} ${c}- Update dan Upgrade sistem"
@@ -48,9 +53,7 @@ if [ $? -ne 0 ]; then
 fi
 echo -e "${sc}[INFO]${rb} ${c}Berhasil Menginstall kebutuhan dasar server Debian"
 sleep 2;
-clear
 
-echo -e "${sc}[SERVER] ${tc}Mengkloning website dari github repository"
 sleep 1;
 echo -e "${sc}[SERVER] ${tc}Masuk kedalam direktori /var/www/html"
 cd /var/www/html
@@ -67,17 +70,38 @@ ls -l
 echo -e "${sc}[INFO]${rb} ${c}Berhasil menghapus file index.html" $rb
 sleep 2;
 
+echo -e "${sc}###########################################################"
+echo -e "${sc}[INFO]${rb} ${c}Setup instalasi berhasil!"
+echo -e "${sc}###########################################################"
+echo -e "\n";
+$r
+sleep 2;
+clear
+
+echo -e "${sc}###########################################################"
+echo -e "${sc}[SERVER] ${tc}Setup instalasi web server berhasil dilakukan, Ada beberapa hal yg perlu dilakukan untuk mengkonfigurasi Web Server Statis, yaitu :"
+echo -e "${sc}[SERVER] ${tc}1. Mengkloning dari github atau mengupload website"
+echo -e "${sc}[SERVER] ${tc}2. Mengubah konfigurasi virtual host pada Apache2"
+echo -e "${sc}[SERVER] ${tc}3. Merestart service Apache2"
+echo -e "${sc}###########################################################"
+$r
+
 echo -e -n "${sc}[SERVER] ${tc}"
-read -p "Masukan link github repositori web statis: " linkgithub;
-echo -e -n "${sc}[SERVER] ${tc}"
-read -p "Apakah link tersebut sudah benar? (y/n): " -r;
+read -p "Apakah konfigurasi ini mau dilakukan secara manual atau otomatis? Jika otomatis pilih Y (y/n): " -r;
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo -e "${sc}[INFO]${rb} ${c}Melanjutkan!" ; $r 
 else
-	echo -e -n "${sc}[SERVER] ${tc}"
-	read -p "Masukan link github repositori web statis: " linkgithub; $r
+	echo -e "${sc}[INFO]${rb} ${c}Melanjutkan konfigurasi web secara manual" ; $r
+	sleep 1;
+	echo -e "${sc}[SERVER] ${tc}Mematikan sistem auto konfigurasi" ; $r
+	sleep 2;
+	echo -e "${sc}[INFO]${rb} ${c}Berhasil dimatikan!" ; $r
+	exit;
 fi
-
-echo -e "${sc}[INFO]${rb} ${c}Mengcloning website dari github repository" $rb
-git clone $linkgithub;
-echo -e "${sc}[INFO]${rb} ${c}Berhasil melakukan cloning dari github repository" $rb
+echo -e -n "${sc}[SERVER] ${tc}"
+read -p "Masukan URL repository github web statis" linkgithub -r;
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+	echo -e "${sc}[INFO]${rb} ${c}Melanjutkan!" ; $r 
+else
+	read -p "Masukan URL repository github web statis" linkgithub -r;
+fi
